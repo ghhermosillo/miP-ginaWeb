@@ -407,7 +407,7 @@ p {
     padding: 4rem 13rem;
   }
   .newsletter-main h2,
-.newsletter-main p {
+  .newsletter-main p {
     text-align: left;
   }
   .newsletter-main .campo_news {
@@ -501,7 +501,7 @@ p {
     gap: 3rem;
   }
   .main-conoceme section .columnas p,
-.main-conoceme section .columnas h2 {
+  .main-conoceme section .columnas h2 {
     text-align: left;
   }
   .main-conoceme .caja-hero p {
@@ -571,7 +571,7 @@ p {
     width: 90%;
   }
   .proyectos-cards .card_proyecto .left h2,
-.proyectos-cards .card_proyecto .left p {
+  .proyectos-cards .card_proyecto .left p {
     text-align: left;
   }
   .proyectos-cards .card_proyecto .left .btn {
@@ -746,10 +746,10 @@ p {
   opacity: 50%;
 }
 .main-portafolio .flex .card-portafolio-code {
-  background-image: url(/ASSETS/IMG/PNG/code.png);
+  background-image: url(assets/IMG/PNG/code.png);
 }
 .main-portafolio .flex .card-portafolio-video {
-  background-image: url(/ASSETS/IMG/PNG/video.png);
+  background-image: url(assets/IMG/PNG/video.png);
 }
 .main-portafolio .flex .card-portafolio-cv {
   background-image: url(https://static.cdn.printful.com/v2/blog/wp-content/uploads/2018/11/about-us-page-writing-e1622029879173.jpg);
@@ -774,7 +774,7 @@ p {
     align-items: baseline;
   }
   .hero-portafolio .left h2,
-.hero-portafolio .left p {
+  .hero-portafolio .left p {
     padding: 0;
     text-align: left;
   }
