@@ -13,7 +13,7 @@ class myHeader extends HTMLElement {
       <nav class="flex flex-ai-c flex-jc-sb">
         <div class="logo">
           <a href="index.html"
-            ><img src="/ASSETS/IMG/PNG/logo-main.png" alt=""
+            ><img src="assets/IMG/PNG/logo-main.png" alt=""
           /></a>
         </div>
         <a id="btnHamburguer" href="#" class="header-menu hide-for-desktop">
@@ -54,19 +54,19 @@ class lastPosts extends HTMLElement {
         <div class="post-row flex flex-fd-r flex-jc-sa">
           <div class="post">
             <a href="lo-que-controlas-y-lo-que-no.html">
-              <img src="/assets/CONTENT/1.png" alt="" />
+              <img src="assets/CONTENT/1.png" alt="" />
               <h3>Lo que controlas y lo que no</h3>
             </a>
           </div>
           <div class="post">
             <a href="el-ritmo.html">
-              <img src="/assets/CONTENT/ritmo-crop.jpg" alt="" />
+              <img src="assets/CONTENT/ritmo-crop.jpg" alt="" />
               <h3>El ritmo</h3>
             </a>
           </div>
           <div class="post">
             <a href="el-momento-perfecto-es-imperfecto.html">
-              <img src="/assets/CONTENT/messy-re.jpg" alt="" />
+              <img src="assets/CONTENT/messy-re.jpg" alt="" />
               <h3>El momento perfecto es imperfecto</h3>
             </a>
           </div>
@@ -87,19 +87,19 @@ class myFooter extends HTMLElement {
         <p class="insta hide-for-mobile">@ghhermosillo</p>
         <div class="redes">
           <a href="https://instagram.com/ghhermosillo" target = "blank"
-            ><img src="/ASSETS/IMG/SVG/instagram-icon.svg" alt=""
+            ><img src="assets/IMG/SVG/instagram-icon.svg" alt=""
           /></a>
           <a href="https://www.youtube.com/channel/UCz_mbzzTp2GyiD2H-Pd5Dpg" target = "blank"
-            ><img src="/ASSETS/IMG/SVG/youtube-icon.svg" alt=""
+            ><img src="assets/IMG/SVG/youtube-icon.svg" alt=""
           /></a>
           <a href="https://www.tiktok.com/@ghhermosillo"  target = "blank"
-            ><img src="/ASSETS/IMG/SVG/tiktok-icon.svg" alt=""
+            ><img src="assets/IMG/SVG/tiktok-icon.svg" alt=""
           /></a>
           <a href="https://twitter.com/ghhermosillo"  target = "blank"
-            ><img src="/ASSETS/IMG/SVG/twitter-icon.svg" alt=""
+            ><img src="assets/IMG/SVG/twitter-icon.svg" alt=""
           /></a>
         </div>
-        <img src="/ASSETS/IMG/PNG/logo-min.png" alt="" class="min-logo" />
+        <img src="assets/IMG/PNG/logo-min.png" alt="" class="min-logo" />
         <p class="copyright">© 2022 Gerardo Hermosillo</p>
       </div>
     </footer>
