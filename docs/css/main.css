@@ -746,10 +746,10 @@ p {
   opacity: 50%;
 }
 .main-portafolio .flex .card-portafolio-code {
-  background-image: url(assets/IMG/PNG/code.png);
+  background-image: url(../assets/IMG/PNG/code.png);
 }
 .main-portafolio .flex .card-portafolio-video {
-  background-image: url(assets/IMG/PNG/video.png);
+  background-image: url(../assets/IMG/PNG/video.png);
 }
 .main-portafolio .flex .card-portafolio-cv {
   background-image: url(https://static.cdn.printful.com/v2/blog/wp-content/uploads/2018/11/about-us-page-writing-e1622029879173.jpg);
