@@ -1,0 +1,32 @@
+@font-face {
+  font-family: freight-bold;
+  src: url(/ASSETS/Fonts/Freight\ Text\ Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: freight-normal;
+  src: url(/ASSETS/Fonts/Freight\ Text\ Medium.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: freight-light;
+  src: url(/ASSETS/Fonts/Freight\ Text\ Light.otf);
+}
+// Colors
+$fondo: #f1f1e6;
+$darkblue: #094067;
+$softblue: #486f9a;
+$mainblack: #242629;
+$naranja: #df701f;
+$bluegray: #4e4e4e;
+
+// Fonts
+$freight-bold: "freight-bold", serif;
+$freight-normal: "freight-normal", serif;
+$freight-light: "freight-light", serif;
+
+// Font sizes
+$parrafosize: 1.8rem; //30 px
+$title: 3.8rem; // 50px
+$subtitle: 2.5rem; //36px
+$secondary-tittle: 3rem; //40 px

@@ -1,0 +1,119 @@
+// Estos son parciales de codido que estoy trayendo a este documento
+@use "../globales/index" as *;
+
+.header {
+  padding: 3rem 2rem 3rem 2rem;
+  .overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 9.1rem;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: calc(100vh - 9.1rem);
+    background-color: $mainblack;
+    a {
+      text-align: center;
+      color: white;
+      padding: 2rem 0.5rem;
+      width: 100%;
+      &:hover {
+        background-color: $darkblue;
+      }
+    }
+  }
+  // Aquí construí el menú de hamburguesa en el estado activo (falta agregar los links)
+  &.open {
+    body {
+      overflow: hidden;
+    }
+    .header-menu {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+    // .overlay {
+    //   // display: block;
+    // }
+  }
+  // Esta es la ventana que se desplaza en el menú mobile
+
+  // Este es el menu de hamburguesa
+  .header-menu {
+    > span {
+      display: block;
+      width: 25px;
+      height: 4px;
+      border-radius: 3px;
+      background-color: $mainblack;
+      transition: all 300ms ease-in-out;
+      transform-origin: 2px center;
+      &:not(:last-child) {
+        margin-bottom: 3.5px;
+      }
+    }
+  }
+  //  Este es mi intento de crear un submenu, solo no encuentro la forma de que aparezca con el hover
+  .sub-content {
+    position: absolute;
+    display: none;
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: $fondo;
+    gap: 2rem;
+    margin-left: -2rem;
+    // top: 2.8rem;
+  }
+  .dropdown span {
+    color: $mainblack;
+    cursor: pointer;
+    font-size: 12px;
+    position: relative;
+    top: -3px;
+    left: 3px;
+    &:hover {
+      color: $mainblack;
+    }
+  }
+  .dropdown:hover .sub-content {
+    display: flex;
+  }
+  .logo img {
+    max-width: 25rem;
+    object-fit: cover;
+  }
+  .menu-links {
+    a {
+      font-size: 2rem;
+      color: $mainblack;
+      font-weight: 400;
+
+      &:not(:last-child) {
+        margin-right: 6rem;
+      }
+      &:hover {
+        color: $naranja;
+      }
+    }
+  }
+
+  @include breakpoint-down(small) {
+    .logo img {
+      max-width: 20rem;
+    }
+  }
+
+  @include breakpoint-up(large) {
+    padding: 3rem 4rem 3rem 4rem;
+    .overlay {
+      height: 0;
+    }
+  }
+}

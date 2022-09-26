@@ -1,0 +1,61 @@
+@use "../../globales/index" as *;
+.main-conoceme {
+  text-align: center;
+  section {
+    padding: 5rem 5rem;
+    gap: 3rem;
+    h2 {
+      font-size: $secondary-tittle;
+    }
+    &:nth-child(3) {
+      background-color: $darkblue;
+      color: white;
+      p {
+        color: white;
+      }
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  img {
+    object-fit: cover;
+    max-width: 300px;
+    max-height: 300px;
+    // margin-bottom: 3rem;
+  }
+  .caja-hero {
+    h2 {
+      font-family: Helvetica, sans-serif;
+      font-size: $secondary-tittle;
+    }
+    p {
+      text-align: center;
+    }
+    img {
+      max-width: 300px;
+      object-fit: cover;
+    }
+  }
+}
+
+@include breakpoint-up(large) {
+  .main-conoceme {
+    section {
+      padding: 5rem 25rem;
+      .columnas {
+        flex-direction: row;
+        gap: 3rem;
+        p,
+        h2 {
+          text-align: left;
+        }
+      }
+    }
+    .caja-hero {
+      p {
+        padding: auto 6rem;
+      }
+    }
+  }
+}

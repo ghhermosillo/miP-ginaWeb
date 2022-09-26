@@ -1,0 +1,44 @@
+@use "../../globales/index" as *;
+
+.posts {
+  text-align: center;
+  margin: 6rem auto;
+  gap: 3rem;
+  .post-row {
+    gap: 3rem;
+  }
+  h4 {
+    font-family: Helvetica, sans-serif;
+    font-size: $secondary-tittle;
+  }
+  .post {
+    h3 {
+      font-family: $freight-bold;
+      color: $mainblack;
+    }
+    img {
+      margin-bottom: 1rem;
+      max-width: 320px;
+    }
+  }
+  .btn {
+    background-color: $darkblue;
+    &:hover {
+      background-color: $naranja;
+    }
+  }
+}
+@include breakpoint-down(medium) {
+  .post-row {
+    flex-direction: column;
+  }
+}
+@include breakpoint-up(large) {
+  .posts {
+    height: 70vh;
+    flex-wrap: wrap;
+    .post-row {
+      gap: 3rem;
+    }
+  }
+}

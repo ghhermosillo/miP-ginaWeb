@@ -1,0 +1,40 @@
+@use "../../globales/index" as *;
+
+.catalogo {
+  background-color: $darkblue;
+  padding: 6rem 2rem 0 2rem;
+  justify-content: space-around;
+  .card {
+    gap: 2.5rem;
+    margin-bottom: 6rem;
+    // img {
+    //   max-width: 100%;
+    //   height: auto;
+    //   width: 200px; /* Bug de ie8 */
+    // }
+    p {
+      color: white;
+      max-width: 20rem;
+    }
+    .btn {
+      background-color: $naranja;
+      font-family: $freight-bold;
+      letter-spacing: 1px;
+      &:hover {
+        background-color: $softblue;
+      }
+    }
+  }
+}
+
+@include breakpoint-down(medium) {
+  .catalogo {
+    flex-direction: column;
+  }
+}
+
+@include breakpoint-up(large) {
+  .catalogo {
+    height: calc(80vh + 5rem);
+  }
+}

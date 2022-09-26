@@ -1,0 +1,112 @@
+@use "../../globales/index" as *;
+
+.hero-portafolio {
+  background-color: $darkblue;
+  gap: 3rem;
+  padding: 6rem 6rem;
+  img {
+    max-width: 300px;
+    object-fit: cover;
+  }
+  .left {
+    gap: inherit;
+    h2 {
+      text-align: center;
+      color: white;
+      font-size: $secondary-tittle;
+    }
+    p {
+      color: white;
+      text-align: justify;
+    }
+    .btn {
+      background-color: $naranja;
+      &:hover {
+        background-color: $softblue;
+      }
+    }
+  }
+}
+.main-portafolio {
+  h3 {
+    padding: 6rem 0;
+    text-align: center;
+    font-size: $secondary-tittle;
+  }
+  .flex {
+    gap: 5rem;
+    .card-portafolio {
+      text-align: center;
+      a {
+        z-index: 2;
+        color: white;
+      }
+      width: 300px;
+      height: 200px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 20px;
+      span {
+        z-index: 1;
+        position: absolute;
+        border-radius: 20px;
+        padding: 100px 150px;
+        background-color: rgba(0, 0, 0, 0.558);
+      }
+
+      &:hover {
+        span {
+          opacity: 100%;
+          &:hover {
+            opacity: 50%;
+          }
+        }
+      }
+
+      &-code {
+        background-image: url(/ASSETS/IMG/PNG/code.png);
+      }
+
+      &-video {
+        background-image: url(/ASSETS/IMG/PNG/video.png);
+      }
+      &-cv {
+        background-image: url(https://static.cdn.printful.com/v2/blog/wp-content/uploads/2018/11/about-us-page-writing-e1622029879173.jpg);
+      }
+    }
+  }
+  .redes-trabajo {
+    flex-direction: column;
+    margin-bottom: 6rem;
+  }
+}
+@include breakpoint-up(large) {
+  .hero-portafolio {
+    flex-direction: row;
+    height: 80vh;
+    padding: 0 10rem;
+    img {
+      justify-content: end;
+      max-width: 500px;
+    }
+    .left {
+      width: 50%;
+      align-items: baseline;
+      h2,
+      p {
+        padding: 0;
+        text-align: left;
+      }
+      p {
+        margin-right: 5rem;
+      }
+    }
+  }
+  .main-portafolio {
+    .flex {
+      flex-direction: row;
+      gap: 5rem;
+    }
+  }
+}

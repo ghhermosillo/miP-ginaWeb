@@ -1,0 +1,36 @@
+@use "../../globales/index" as *;
+
+.main-template-blog {
+  gap: 3rem;
+  img {
+    object-fit: cover;
+    width: 300px;
+  }
+  h1 {
+    text-align: center;
+    font-size: $title;
+    font-family: $freight-bold;
+  }
+  .italic {
+    font-style: italic;
+  }
+  margin: 0 5rem;
+  article {
+    p {
+      text-align: justify;
+      color: $mainblack;
+      line-height: 36px;
+    }
+    h4 {
+      font-size: $secondary-tittle;
+    }
+  }
+}
+@include breakpoint-up(large) {
+  .main-template-blog {
+    img {
+      width: 500px;
+    }
+    margin: 0 25rem;
+  }
+}

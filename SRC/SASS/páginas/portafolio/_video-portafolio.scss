@@ -1,0 +1,84 @@
+@use "../../globales/index" as *;
+
+.video-portafolio {
+  color: white;
+
+  background-color: black;
+  .hero-video-portafolio {
+    padding: 6rem 0;
+    .left {
+      padding: 0 5rem;
+      text-align: center;
+      img {
+        max-width: 50px;
+      }
+      h3 {
+        font-size: $title;
+      }
+      p {
+        font-size: $secondary-tittle;
+        color: white;
+      }
+      .programas {
+        img {
+          &:not(last-child) {
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+    .yo {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  section {
+    font-size: $secondary-tittle;
+    text-align: center;
+    &:last-child {
+      padding: 0 0 6rem 0;
+      .more-work {
+        padding: 6rem;
+        .btn {
+          background-color: white;
+          color: black;
+          &:hover {
+            background-color: $mainblack;
+            color: white;
+          }
+        }
+      }
+      .redes-trabajo {
+        gap: 3rem;
+      }
+    }
+  }
+}
+
+@include breakpoint-up(large) {
+  .video-portafolio {
+    .hero-video-portafolio {
+      height: 100vh;
+      padding: 0;
+      flex-direction: row;
+      .left {
+        justify-content: center;
+        align-items: baseline;
+        height: auto;
+        img {
+          max-width: 100px;
+        }
+        p {
+          text-align: left;
+        }
+      }
+    }
+    .reel {
+      iframe {
+        margin-top: -7rem;
+        height: 100vh;
+      }
+    }
+  }
+}

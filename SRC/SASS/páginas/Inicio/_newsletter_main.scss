@@ -1,0 +1,70 @@
+@use "../../globales/index" as *;
+
+.newsletter-main {
+  padding: 4rem 5rem;
+  background-color: $naranja;
+  gap: 5rem;
+  text-align: center;
+  div {
+    gap: 2rem;
+
+    .button {
+      background-color: $darkblue;
+      color: white;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      border: 0;
+      border-radius: 10px;
+      padding: 5px 10px;
+      font-size: $parrafosize;
+      width: 80%;
+      &:hover {
+        transform: scale(1.05);
+        transition: 300ms ease-in-out;
+      }
+    }
+    .campo_news {
+      border: 0;
+      margin-bottom: 2rem;
+      border-bottom: 3px solid white;
+      font-family: $freight-light;
+      font-size: $parrafosize;
+      color: white;
+      padding: 0.5rem;
+      background-color: inherit;
+      outline: none;
+      &:focus {
+        outline: none;
+      }
+      :active {
+        background-color: $naranja;
+      }
+      &::placeholder {
+        color: white;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  h2 {
+    font-family: $freight-bold;
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+
+@include breakpoint-up(large) {
+  .newsletter-main {
+    flex-direction: row;
+    height: 70vh;
+    padding: 4rem 13rem;
+    h2,
+    p {
+      text-align: left;
+    }
+    .campo_news {
+      width: 400px;
+    }
+  }
+}

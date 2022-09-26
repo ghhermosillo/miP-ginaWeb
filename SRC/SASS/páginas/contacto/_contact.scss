@@ -1,0 +1,29 @@
+@use "../../globales/index" as *;
+
+.main-contact {
+  padding: 5rem;
+  img {
+    max-width: 300px;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+}
+
+@include breakpoint-up(large) {
+  .main-contact {
+    padding: 5rem 30rem;
+    img {
+      max-width: 400px;
+    }
+    .columnas {
+      flex-direction: row;
+    }
+    h2 {
+      text-align: justify;
+    }
+  }
+}

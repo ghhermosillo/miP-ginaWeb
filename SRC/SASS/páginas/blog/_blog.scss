@@ -1,0 +1,44 @@
+@use "../../globales/index" as *;
+.post-template {
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  gap: 3rem;
+  text-align: center;
+  img {
+    object-fit: cover;
+    max-width: 320px;
+    height: 230px;
+  }
+  .post {
+    align-items: center;
+    width: 320px;
+    // height: 300px;
+
+    a {
+      flex-wrap: wrap;
+      color: $mainblack;
+      &:hover {
+        color: $naranja;
+      }
+    }
+  }
+}
+.links-posts {
+  margin-top: 5rem;
+  a {
+    color: $mainblack;
+    font-size: $parrafosize;
+    &:hover {
+      color: $naranja;
+    }
+  }
+}
+.blog {
+  margin-bottom: 10rem;
+}
+@include breakpoint-up(large) {
+  .post-template {
+    margin-top: 0;
+    width: 60%;
+  }
+}

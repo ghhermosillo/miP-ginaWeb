@@ -1,0 +1,17 @@
+// use es para usar dentro del documento y nombrarlo
+// forward es para traerlo a un documento y después llamarlo (algo así)
+
+// globales
+@use "globales/index";
+// Partes globales
+@use "páginas/header";
+@use "páginas/footer";
+// paginas
+@use "páginas/Inicio/index-inicio";
+@use "páginas/conoceme/index-conoceme";
+@use "páginas/proyectos/proyectos";
+@use "páginas/contacto/contact";
+@use "páginas/blog/blog";
+@use "páginas/blog/template-blog";
+@use "páginas/portafolio/portafolio";
+@use "páginas/portafolio/video-portafolio";

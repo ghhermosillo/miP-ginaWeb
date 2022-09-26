@@ -1,0 +1,49 @@
+@use "../../globales/index" as *;
+.hero {
+  margin: auto 5rem;
+  gap: 2.5rem;
+  height: calc(90vh - 9.5rem);
+  margin-bottom: 6rem;
+  .left {
+    gap: inherit;
+    h2 {
+      font-size: $secondary-tittle;
+    }
+  }
+
+  img {
+    // overflow: hidden;
+    max-width: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  p {
+    text-align: center;
+  }
+
+  .btn {
+    background-color: $darkblue;
+    &:hover {
+      background-color: $naranja;
+    }
+  }
+}
+
+@include breakpoint-up(large) {
+  .hero {
+    margin: auto 20rem;
+    flex-direction: row;
+    .left {
+      flex-direction: column;
+      align-items: baseline;
+      gap: inherit;
+      p {
+        text-align: left;
+      }
+    }
+
+    img {
+      max-width: 450px;
+    }
+  }
+}

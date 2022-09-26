@@ -1,0 +1,44 @@
+@use "../globales/index" as *;
+
+.footer {
+  background-color: $mainblack;
+  color: white;
+  padding: 6rem 0 2rem 0;
+  gap: 3rem;
+  .redes img {
+    margin-left: 5px;
+  }
+  .min-logo img {
+    object-fit: cover;
+    max-width: 50px;
+    height: auto;
+  }
+  p {
+    text-align: center;
+    font-size: $parrafosize;
+    color: white;
+  }
+}
+@include breakpoint-up(large) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .insta {
+      margin-left: 50px;
+      order: 1;
+    }
+    .redes {
+      margin-right: 50px;
+      order: 3;
+    }
+    .min-logo {
+      order: 2;
+      margin-left: 80px;
+    }
+  }
+  .copyright {
+    order: 4;
+    width: 100%;
+  }
+}

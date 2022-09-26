@@ -1,0 +1,98 @@
+@use "variables" as *;
+@use "mixings" as *;
+* {
+  margin: 0%;
+  border: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: $parrafosize;
+  font-family: Helvetica, sans-serif;
+  background-color: $fondo;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+p {
+  a {
+    color: $softblue;
+    &:hover {
+      color: $naranja;
+    }
+  }
+}
+.btn {
+  border-radius: 18px;
+  padding: 0.5rem 2.5rem;
+  font-weight: 600;
+  color: white;
+}
+h2 {
+  color: $mainblack;
+  font-size: $title;
+  font-family: $freight-bold;
+}
+p {
+  color: $bluegray;
+  font-size: $parrafosize;
+  text-align: center;
+}
+
+// .flex {
+//   &-center {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+// }
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+  &-fd-r {
+    flex-direction: row;
+  }
+  &-fd-c {
+    flex-direction: column;
+  }
+}
+.hide-for-mobile {
+  // hide for tablet and mobile
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  // hide for desktop vh widhts
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.overflow {
+  overflow: auto;
+  &-hidden {
+    overflow: hidden;
+  }
+}

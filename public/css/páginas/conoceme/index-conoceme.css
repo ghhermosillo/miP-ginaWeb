@@ -1,0 +1,184 @@
+@font-face {
+  font-family: freight-bold;
+  src: url(/ASSETS/Fonts/Freight\ Text\ Bold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: freight-normal;
+  src: url(/ASSETS/Fonts/Freight\ Text\ Medium.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: freight-light;
+  src: url(/ASSETS/Fonts/Freight\ Text\ Light.otf);
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.fade-in {
+  animation: fade-in 300ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 300ms ease-in-out forwards;
+}
+
+* {
+  margin: 0%;
+  border: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: Helvetica, sans-serif;
+  background-color: #f1f1e6;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+p a {
+  color: #486f9a;
+}
+p a:hover {
+  color: #df701f;
+}
+
+.btn {
+  border-radius: 18px;
+  padding: 0.5rem 2.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+h2 {
+  color: #242629;
+  font-size: 3.8rem;
+  font-family: "freight-bold", serif;
+}
+
+p {
+  color: #4e4e4e;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-jc-sa {
+  justify-content: space-around;
+}
+.flex-ai-c {
+  align-items: center;
+}
+.flex-fd-r {
+  flex-direction: row;
+}
+.flex-fd-c {
+  flex-direction: column;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.overflow {
+  overflow: auto;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.main-conoceme {
+  text-align: center;
+}
+.main-conoceme section {
+  padding: 5rem 5rem;
+  gap: 3rem;
+}
+.main-conoceme section h2 {
+  font-size: 3rem;
+}
+.main-conoceme section:nth-child(3) {
+  background-color: #094067;
+  color: white;
+}
+.main-conoceme section:nth-child(3) p {
+  color: white;
+}
+.main-conoceme section p {
+  text-align: justify;
+}
+.main-conoceme img {
+  object-fit: cover;
+  max-width: 300px;
+  max-height: 300px;
+}
+.main-conoceme .caja-hero h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 3rem;
+}
+.main-conoceme .caja-hero p {
+  text-align: center;
+}
+.main-conoceme .caja-hero img {
+  max-width: 300px;
+  object-fit: cover;
+}
+
+@media (min-width: 64em) {
+  .main-conoceme section {
+    padding: 5rem 25rem;
+  }
+  .main-conoceme section .columnas {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .main-conoceme section .columnas p,
+.main-conoceme section .columnas h2 {
+    text-align: left;
+  }
+  .main-conoceme .caja-hero p {
+    padding: auto 6rem;
+  }
+}

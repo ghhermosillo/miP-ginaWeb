@@ -1,0 +1,76 @@
+@use "../../globales/index" as *;
+
+.hero-proyectos {
+  //   height: 70vh;
+  img {
+    max-width: 300px;
+  }
+}
+.proyectos-cards {
+  padding: 5rem 0;
+  gap: 6rem;
+  .card_proyecto {
+    flex-direction: column-reverse;
+    width: 30rem;
+    background-color: $naranja;
+    border-radius: 15px;
+    &-blue {
+      background-color: $softblue;
+    }
+    .btn {
+      background-color: $darkblue;
+      &:hover {
+        background-color: $softblue;
+      }
+    }
+    .left {
+      padding: 4rem;
+
+      text-align: center;
+      gap: 3rem;
+      h2 {
+        color: white;
+        font-family: Helvetica, sans-serif;
+        font-size: $secondary-tittle;
+      }
+      p {
+        color: white;
+      }
+    }
+
+    overflow: hidden;
+    img {
+      overflow: hidden;
+      object-fit: cover;
+      max-width: 100%;
+      height: auto;
+      width: 400px;
+    }
+  }
+}
+@include breakpoint-up(large) {
+  .hero-proyectos {
+    height: 70vh;
+    img {
+      max-width: 500px;
+    }
+  }
+  .proyectos-cards {
+    margin: 0 10rem;
+    .card_proyecto {
+      flex-direction: row;
+      width: 70rem;
+      .left {
+        width: 90%;
+        h2,
+        p {
+          text-align: left;
+        }
+        .btn {
+          width: fit-content;
+          padding: 1rem 2rem;
+        }
+      }
+    }
+  }
+}
