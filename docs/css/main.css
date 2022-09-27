@@ -1,16 +1,16 @@
 @font-face {
   font-family: freight-bold;
-  src: url(/ASSETS/Fonts/Freight\ Text\ Bold.otf);
+  src: url(../assets/Fonts/Freight\ Text\ Bold.otf);
   font-weight: bold;
 }
 @font-face {
   font-family: freight-normal;
-  src: url(/ASSETS/Fonts/Freight\ Text\ Medium.otf);
+  src: url(../assets/Fonts/Freight\ Text\ Medium.otf);
   font-weight: normal;
 }
 @font-face {
   font-family: freight-light;
-  src: url(/ASSETS/Fonts/Freight\ Text\ Light.otf);
+  src: url(../assets/Fonts/Freight\ Text\ Light.otf);
 }
 @keyframes fade-in {
   from {
@@ -745,7 +745,7 @@ p {
 .main-portafolio .flex .card-portafolio:hover span:hover {
   opacity: 50%;
 }
-.main-portafolio .flex .card-portafolio-code {
+.assets-portafolio .flex .card-portafolio-code {
   background-image: url(../assets/IMG/PNG/code.png);
 }
 .main-portafolio .flex .card-portafolio-video {
