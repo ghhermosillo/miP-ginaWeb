@@ -27,17 +27,10 @@ btnHamburguer.addEventListener("click", function () {
     overflow.classList.add("overflow-hidden");
   }
 });
-// dropdown.addEventListener("pointerover", function () {
-//   console.log("hover works");
-//   if (hover.classList.contains("hover-on")) {
-//     hover.classList.remove("hover-on");
-//     // hover.classList.add("hover-on");
-//   } else {
-//     hover.classList.add("hover-on");
-//   }
-// });
-// const sub_content = document.querySelector(".sub-content")
-// if (sub_content.)
-// if(sub_content.classList.contains("hover")){
 
-// }
+let imagen = document.getElementsByTagName(`img`);
+
+console.log(imagen);
+for (let i = 0; i < imagen.length; i++) {
+  imagen[i].setAttribute("loading", "lazy");
+}
