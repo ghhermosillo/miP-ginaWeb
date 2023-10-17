@@ -7,7 +7,7 @@ class myHeader extends HTMLElement {
         <a href="index.html">Inicio</a>
         <a href="conoceme.html">Conoceme</a>
         <a href="proyectos.html">Proyectos</a>
-        <a href="portafolio.html">Portafolio</a>
+        <a href="video-portafolio.html">Portafolio</a>
         <a href="contacto.html">Contacto</a>
       </div>
       <nav class="flex flex-ai-c flex-jc-sb">
@@ -31,7 +31,7 @@ class myHeader extends HTMLElement {
               <span>▼</span>
             </a>
             <div class="sub-content flex-fd-c">
-              <a href="portafolio.html">Portafolio</a>
+              <a href="video-portafolio.html">Portafolio</a>
               <a href="proyectos.html">Proyectos</a>
             </div>
           </div>
